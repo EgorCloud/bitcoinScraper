@@ -1,0 +1,12 @@
+.col-md-12.spi-table {
+  box-shadow: 2px -1px 24px -4px rgba(0,0,0,0.75);
+}
+
+.col-md-12 {
+  margin-bottom: 45px;
+}
+
+.d-flex.flex-column.justify-content-center {
+  height: 100vh;
+}
+
