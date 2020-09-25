@@ -12,76 +12,76 @@
 </head>
 
 <body class="d-flex flex-column justify-content-center">
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-center" data-aos="fade-down">Bitcoin Price Scraper</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" data-aos="fade-down">
-                    <form>
-                        <div class="form-row justify-content-center">
-                            <div class="col-md-6"><select class="border rounded border-white shadow-sm custom-select"
-                                    required="">
-                                    <option value="60" selected="">1 минута</option>
-                                    <option value="1800">30 минут</option>
-                                    <option value="3600">1 час</option>
-                                    <option value="86400">1 день</option>
-                                </select></div>
-                            <div class="col-md-auto"><button class="btn btn-primary" type="button">
-                                    <span class="spinner-border spinner-border-sm" role="hidden"
-                                        aria-hidden="true"></span>
-                                    Принять
-                                </button></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="col-md-12 spi-table" data-aos="fade-down" data-aos-delay="150">
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Время</th>
-                                <th>Цена</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                            </tr>
-                            <tr>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <di <div class="container">
+<div>
+    <div class="container">
         <div class="row">
-            <div class="col-md-12 d-flex flex-row justify-content-center"><button class="btn btn-light" type="button"><i
-                        class="fa fa-refresh"></i></button></div>
+            <div class="col">
+                <h1 class="text-center" data-aos="fade-down">Bitcoin Price Scraper</h1>
+            </div>
         </div>
+    </div>
+</div>
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" data-aos="fade-down">
+                <form action="/bitcoin/settime" id="timechanger">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-6">
+                            <select class="border rounded border-white shadow-sm custom-select"
+                                    required="">
+                                <option value="60" selected="">1 минута</option>
+                                <option value="1800">30 минут</option>
+                                <option value="3600">1 час</option>
+                                <option value="86400">1 день</option>
+                            </select></div>
+                        <div class="col-md-auto">
+                            <button class="btn btn-primary">
+                                    <span class="spinner-border spinner-border-sm" role="hidden"
+                                          aria-hidden="true"></span>
+                                Принять
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
+    </div>
+</div>
+<div>
+    <div class="container">
+        <div class="col-md-12 spi-table" data-aos="fade-down" data-aos-delay="150">
+            <div class="table-responsive">
+                <table class="table" >
+                    <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Цена</th>
+                    </tr>
+                    </thead>
+                    <tbody id="table">
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/bs-init.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    </div>
+</div>
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex flex-row justify-content-center">
+                <button class="btn btn-light" type="button" onclick="document.location.reload();"><i
+                    class="fa fa-refresh"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
+<script src="assets/js/api.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,10 @@
-const path = require("path")
-const fs = require("fs")
-const nodeExternals = require('webpack-node-externals');
-const CopyPlugin = require('copy-webpack-plugin');
+const path = require("path");
+const nodeExternals = require("webpack-node-externals");
+const CopyPlugin = require("copy-webpack-plugin");
 
+// noinspection WebpackConfigHighlighting
 const config = {
-    entry: "./src/index.js",
+    entry: "./src/indexRoute.js",
     mode: "production",
     output: {
         path: path.join(__dirname, "build"),
@@ -25,36 +25,33 @@ const config = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'eslint-loader',
+                loader: "eslint-loader",
                 options: {
                     cache: true,
                 },
-
             },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: "babel-loader",
                     options: {
-                        presets: ['@babel/preset-env'],
-                        plugins: ['@babel/plugin-proposal-object-rest-spread']
-                    }
-                }
+                        presets: ["@babel/preset-env"],
+                        plugins: ["@babel/plugin-proposal-object-rest-spread"],
+                    },
+                },
             },
             {
                 test: /\.json$/,
                 loader: "json",
             },
-        ]
+        ],
     },
     plugins: [
         new CopyPlugin({
-            patterns: [
-                { from: 'src/assets', to: 'assets' }
-            ],
+            patterns: [{ from: "src/assets", to: "assets" }],
         }),
     ],
-}
+};
 
-module.exports = config
+module.exports = config;

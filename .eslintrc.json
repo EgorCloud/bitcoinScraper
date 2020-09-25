@@ -12,7 +12,7 @@
         "prettier"
     ],
     "parserOptions": {
-        "ecmaVersion": 12
+        "ecmaVersion": 2020
     },
     "globals": {
         "Atomics": "readonly",
@@ -20,20 +20,17 @@
     },
     "rules": {
         "prettier/prettier": "error",
-        "indent": [
-            "error",
-            "tab"
-        ],
+        "indent": 0,
         "semi": [
             "error",
             "always"
         ],
-        "quotes": [
-            "warn",
-            "single",
-            "backtick",
-            "double"
-        ],
-        "eqeqeq": "warn"
+        "comma-dangle": "off",
+        "no-console": "off",
+        "no-unused-expressions": "off",
+        "quotes": "off",
+        "eqeqeq": "warn",
+        "wrap-iife": "off",
+        "no-underscore-dangle": "off"
     }
 }

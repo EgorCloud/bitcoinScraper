@@ -1,16 +1,23 @@
 {
-  "name": "bitcoinscraper",
-  "version": "1.0.0",
-  "description": "Bitcoin Scraper",
+    "name": "bitcoinscraper",
+    "version": "1.0.0",
+    "description": "Bitcoin Scraper",
     "main": "./src/index.js",
     "scripts": {
         "dev": "nodemon",
         "install": "npm i express",
         "build": "webpack --config webpack.config.js --mode production"
     },
-  "dependencies": {
-    "express": "^4.17.1"
-  },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-form-data": "^2.0.14",
+        "mongoose": "^5.10.6",
+        "node-cache": "^5.1.2",
+        "node-fetch": "^2.6.1"
+    },
     "devDependencies": {
         "@babel/cli": "^7.11.6",
         "@babel/core": "^7.11.6",
@@ -24,21 +31,21 @@
         "eslint-loader": "^4.0.2",
         "eslint-plugin-import": "^2.22.0",
         "eslint-plugin-prettier": "^3.1.4",
+        "express": "^4.17.1",
         "nodemon": "^2.0.4",
         "prettier": "^2.1.1",
         "webpack": "^4.44.2",
         "webpack-cli": "^3.3.12",
-        "webpack-node-externals": "^2.5.2",
-        "express": "^4.17.1"
+        "webpack-node-externals": "^2.5.2"
     },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EgorCloud/bitcoinScraper.git"
-  },
-  "author": "Brodskiy Yehor",
-  "license": "AGPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/EgorCloud/bitcoinScraper/issues"
-  },
-  "homepage": "https://github.com/EgorCloud/bitcoinScraper#readme"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EgorCloud/bitcoinScraper.git"
+    },
+    "author": "Brodskiy Yehor",
+    "license": "AGPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/EgorCloud/bitcoinScraper/issues"
+    },
+    "homepage": "https://github.com/EgorCloud/bitcoinScraper#readme"
 }
